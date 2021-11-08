@@ -1,0 +1,29 @@
+@import "./breakpoint.scss";
+@import "./variables.scss";
+@import "./reset.scss";
+
+html {
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.hero {
+  overflow: hidden;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+
+  img {
+    z-index: 1000001;
+  }
+
+  #video {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+}
