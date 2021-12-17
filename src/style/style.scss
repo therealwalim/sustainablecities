@@ -2,9 +2,27 @@
 @import "./variables.scss";
 @import "./reset.scss";
 
-html {
-  font-family: Poppins;
-  font-weight: bold;
+
+nav{
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo{
+    img{
+      height: 60px;
+    }
+  }
+  ul{
+    li{
+      display: inline-block;
+      padding: 1em;
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 .hero {
@@ -20,10 +38,82 @@ html {
   }
 
   #video {
-    position: fixed;
+    position: relative;
     z-index: 1;
+    height: 100%;
     width: 100%;
+    transform: scale(1.5);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+  }
+}
+
+.about {
+  h1 {
+  }
+  h2 {
+  }
+  p {
+  }
+  .btn__video {
+    p {
+    }
+  }
+}
+
+.sponsor {
+  h1 {
+  }
+  h2 {
+  }
+  p {
+  }
+  .sponsor_card {
+    img {
+    }
+  }
+}
+
+.agenda {
+  h1 {
+  }
+  h2 {
+  }
+  h3 {
+  }
+  .line__active {
+  }
+  .plan {
+    .plan__component {
+      .plan__hour {
+      }
+      .plan__description {
+        .description__title {
+        }
+        .description__descript {
+        }
+      }
+    }
+    .plan__line {
+    }
+  }
+}
+
+.whitepaper {
+  h1 {
+  }
+  h2 {
+  }
+  p {
+  }
+  .whitepaper__card {
+    img {
+    }
+    h4 {
+    }
+    .btn__download {
+      p {
+      }
+    }
   }
 }
