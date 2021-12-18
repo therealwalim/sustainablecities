@@ -130,7 +130,8 @@ nav {
       }
       .about__description {
         width: 628px;
-        height: 222px;
+        height: 220px;
+        margin: 1.2em 0;
         font-family: Roboto;
         font-weight: normal;
         font-size: 18px;
@@ -170,57 +171,198 @@ nav {
 }
 
 .sponsor {
-  h1 {
-  }
-  h2 {
-  }
-  p {
-  }
-  .sponsor_card {
-    img {
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-color;
+  .container {
+    padding-top: 6em;
+    width: 1080px;
+    margin: 0 auto;
+    h1 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 57px;
+      color: #abdf75;
+      opacity: 0.31;
+    }
+    h2 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: left;
+      color: #abdf75;
+    }
+    p {
+      width: 544px;
+      height: 90px;
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: left;
+      color: #f4f4f4;
+      margin: 1.2em 0;
+    }
+    .sponsor__container {
+      display: grid;
+      grid-template-columns: 109px 109px 109px auto;
+      gap: 1em;
+      .sponsor__card {
+        width: 109px;
+        height: 109px;
+        border-radius: 9px;
+        background: rgba(37, 36, 34, 0.15);
+        display: grid;
+        place-items: center;
+
+        svg {
+          height: 45px;
+          width: 45px;
+        }
+      }
     }
   }
 }
 
 .agenda {
-  h1 {
-  }
-  h2 {
-  }
-  h3 {
-  }
-  .line__active {
-  }
-  .plan {
-    .plan__component {
-      .plan__hour {
-      }
-      .plan__description {
-        .description__title {
-        }
-        .description__descript {
-        }
-      }
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg-color;
+  .container {
+    padding-top: 6em;
+    width: 1080px;
+    margin: 0 auto;
+    h1 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 57px;
+      color: #abdf75;
+      opacity: 0.31;
     }
-    .plan__line {
+    h2 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: left;
+      color: #abdf75;
+    }
+    h3 {
+      font-family: Poppins;
+      font-weight: 300;
+      font-size: 28px;
+      text-align: left;
+      color: #abdf75;
+      margin-top: 1.2em;
+    }
+    .line__active {
+      width: 100%;
+      height: 0px;
+      background: transparent;
+      border: 1px solid #abdf75;
+      margin-top: 1.3em;
+    }
+    .plan {
+      margin: 2em 0;
+      display: flex;
+      flex-direction: column;
+      .plan__component {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        gap: 6em;
+        //justify-content: space-between;
+        .plan__hour {
+          font-family: Roboto;
+          font-weight: normal;
+          font-size: 21px;
+          text-align: left;
+          color: #f4f4f4;
+        }
+        .plan__description {
+          .description__title {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 21px;
+            text-align: left;
+            color: #f4f4f4;
+          }
+          .description__descript {
+            width: 736px;
+            height: 44px;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: left;
+            color: #f4f4f4;
+            opacity: 0.31;
+            margin-top: 0.8em;
+          }
+        }
+      }
+      .plan__line {
+        width: 100%;
+        background: transparent;
+        border: 1px solid #f4f4f4;
+        opacity: 0.06;
+        margin: 2em 0;
+      }
     }
   }
 }
 
 .whitepaper {
-  h1 {
-  }
-  h2 {
-  }
-  p {
-  }
-  .whitepaper__card {
-    img {
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-color;
+  .container {
+    padding-top: 6em;
+    width: 1080px;
+    margin: 0 auto;
+
+    h1 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 57px;
+      color: #abdf75;
+      opacity: 0.31;
     }
-    h4 {
+    h2 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: left;
+      color: #abdf75;
     }
-    .btn__download {
-      p {
+    p {
+      width: 544px;
+      height: 90px;
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: left;
+      color: #f4f4f4;
+      margin: 1.2em 0;
+    }
+    .whitepaper__card {
+      width: 260px;
+      height: 260px;
+      border-radius: 10px;
+      background: #252422;
+
+      img {
+          position: absolute;
+          margin-top: -1.5em;
+      }
+
+      h4 {
+          margin-top: 4em;
+      }
+      .btn__download {
+          margin-top: 4em;
+        p {
+        }
       }
     }
   }
