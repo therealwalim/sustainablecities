@@ -5,6 +5,27 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+//layout
+:root{
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-top: 6em;
+  width: 80vw;
+  margin: 0 auto;
+
+  @include media("<=tablet") {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  @include media("<=phone") {
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
+
 nav {
   position: fixed;
   display: flex;
@@ -13,13 +34,40 @@ nav {
   z-index: 100000000000;
   margin: 1em;
   width: calc(100% - 2em);
+
+  @include media("<=tablet") {
+    position: absolute;
+  }
+
+  @include media("<=phone") {
+    position: absolute;
+  }
+
+  @include media("<=tablet") {
+    width: 95vw;
+    margin: 1em 0;
+    justify-content: center;
+  }
+
+  @include media("<=phone") {
+    width: 95vw;
+    margin: 1em 0;
+    justify-content: center;
+  }
+
   .logo {
     img {
       height: 40px;
     }
   }
   ul {
-    //margin-right: 3em;
+    @include media("<=tablet") {
+      display: none;
+    }
+
+    @include media("<=phone") {
+      display: none;
+    }
     li {
       display: inline-block;
       margin-left: 1em;
@@ -42,6 +90,14 @@ nav {
   width: 100%;
   display: grid;
   place-content: center;
+
+  @include media("<=tablet") {
+    width: 100vw;
+  }
+
+  @include media("<=phone") {
+    width: 100vw;
+  }
 
   img {
     z-index: 1000001;
@@ -68,6 +124,18 @@ nav {
       text-align: center;
       color: #f4f4f4;
       text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+      @include media("<=tablet") {
+        width: 23rem;
+        line-height: 2rem;
+        font-size: 1.8rem;
+      }
+
+      @include media("<=phone") {
+        width: 19rem;
+        line-height: 1.8rem;
+        font-size: 1.5rem;
+      }
     }
     p {
       width: 39rem;
@@ -78,6 +146,18 @@ nav {
       text-align: center;
       color: #f4f4f4;
       text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+      @include media("<=tablet") {
+        width: 30rem;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+      }
+
+      @include media("<=phone") {
+        width: 20rem;
+        line-height: 1.4rem;
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -87,6 +167,14 @@ nav {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include media("<=tablet") {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    @include media("<=phone") {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
   }
 
   #video {
@@ -95,9 +183,17 @@ nav {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transform: scale(1.5);
+    //transform: scale(1.5);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+
+    @include media("<=tablet") {
+      transform: scale(4);
+    }
+
+    @include media("<=phone") {
+      transform: scale(3.2);
+    }
   }
 }
 
@@ -106,20 +202,41 @@ nav {
   height: 100vh;
   background-color: $bg-color;
   .container {
-    padding-top: 6em;
-    width: 1080px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
     .about__text {
+      @include media("<=tablet") {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include media("<=phone") {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       h1 {
         font-family: Poppins;
         font-weight: bold;
         font-size: 57px;
         color: #abdf75;
         opacity: 0.31;
+
+        @include media("<=tablet") {
+          font-size: 3em;
+        }
+
+        @include media("<=phone") {
+          font-size: 2.8em;
+        }
       }
       h2 {
         font-family: Poppins;
@@ -127,6 +244,14 @@ nav {
         font-size: 50px;
         text-align: left;
         color: #abdf75;
+
+        @include media("<=tablet") {
+          font-size: 2.3em;
+        }
+
+        @include media("<=phone") {
+          font-size: 2.3em;
+        }
       }
       .about__description {
         width: 628px;
@@ -139,6 +264,18 @@ nav {
         text-align: left;
         color: #f4f4f4;
         overflow: hidden;
+
+        @include media("<=tablet") {
+          font-size: 1em;
+          width: 90vw;
+          text-align: center;
+        }
+
+        @include media("<=phone") {
+          font-size: 1em;
+          width: 90vw;
+          text-align: center;
+        }
       }
       .btn__video {
         max-width: 150px;
@@ -150,10 +287,26 @@ nav {
         gap: 1em;
         align-items: center;
 
+        @include media("<=tablet") {
+          padding: 0.9em 0.9em;
+        }
+
+        @include media("<=phone") {
+          padding: 0.8em 0.8em;
+        }
+
         svg {
           width: 28px !important;
           height: 22px !important;
           background: transparent;
+
+          @include media("<=tablet") {
+            transform: scale(0.8);
+          }
+
+          @include media("<=phone") {
+            transform: scale(0.8);
+          }
         }
 
         .btn__label {
@@ -161,29 +314,67 @@ nav {
           font-weight: 500;
           font-size: 17px;
           color: #abdf75;
+
+          @include media("<=tablet") {
+            font-size: 1em;
+          }
+
+          @include media("<=phone") {
+            font-size: 1em;
+          }
         }
       }
     }
 
-    .about__image {
+    .image {
+      img {
+        @include media("<=tablet") {
+          display: none;
+        }
+
+        @include media("<=phone") {
+          display: none;
+        }
+      }
     }
   }
 }
 
 .sponsor {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $bg-color;
+
   .container {
-    padding-top: 6em;
-    width: 1080px;
-    margin: 0 auto;
+    @include media("<=tablet") {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include media("<=phone") {
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     h1 {
       font-family: Poppins;
       font-weight: bold;
       font-size: 57px;
       color: #abdf75;
       opacity: 0.31;
+
+      @include media("<=tablet") {
+        font-size: 3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.8em;
+      }
     }
     h2 {
       font-family: Poppins;
@@ -191,10 +382,17 @@ nav {
       font-size: 50px;
       text-align: left;
       color: #abdf75;
+
+      @include media("<=tablet") {
+        font-size: 2.3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.3em;
+      }
     }
     p {
       width: 544px;
-      height: 90px;
       font-family: Roboto;
       font-weight: normal;
       font-size: 18px;
@@ -202,11 +400,34 @@ nav {
       text-align: left;
       color: #f4f4f4;
       margin: 1.2em 0;
+
+      @include media("<=tablet") {
+        font-size: 1em;
+        width: 90vw;
+        text-align: center;
+      }
+
+      @include media("<=phone") {
+        font-size: 1em;
+        width: 90vw;
+        text-align: center;
+      }
     }
     .sponsor__container {
       display: grid;
       grid-template-columns: 109px 109px 109px auto;
       gap: 1em;
+
+      @include media("<=tablet") {
+        font-size: 1em;
+        width: 90vw;
+        text-align: center;
+      }
+
+      @include media("<=phone") {
+        grid-template-columns: auto;
+        justify-content: center;
+      }
       .sponsor__card {
         width: 109px;
         height: 109px;
@@ -229,15 +450,35 @@ nav {
   min-height: 100vh;
   background-color: $bg-color;
   .container {
-    padding-top: 6em;
-    width: 1080px;
-    margin: 0 auto;
+    @include media("<=tablet") {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include media("<=phone") {
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     h1 {
       font-family: Poppins;
       font-weight: bold;
       font-size: 57px;
       color: #abdf75;
       opacity: 0.31;
+
+      @include media("<=tablet") {
+        font-size: 3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.8em;
+      }
     }
     h2 {
       font-family: Poppins;
@@ -245,14 +486,30 @@ nav {
       font-size: 50px;
       text-align: left;
       color: #abdf75;
+
+      @include media("<=tablet") {
+        font-size: 2.3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.3em;
+      }
     }
     h3 {
       font-family: Poppins;
       font-weight: 300;
       font-size: 28px;
-      text-align: left;
       color: #abdf75;
       margin-top: 1.2em;
+
+      @include media("<=tablet") {
+        font-size: 2.3em;
+      }
+
+      @include media("<=phone") {
+        text-align: center;
+        font-size: 1.5em;
+      }
     }
     .line__active {
       width: 100%;
@@ -260,16 +517,37 @@ nav {
       background: transparent;
       border: 1px solid #abdf75;
       margin-top: 1.3em;
+
+      @include media("<=tablet") {
+        width: 80vw;
+      }
+
+      @include media("<=phone") {
+        width: 80vw;
+      }
     }
     .plan {
-      margin: 2em 0;
+      margin-top: 2em;
       display: flex;
       flex-direction: column;
+
       .plan__component {
         display: flex;
         flex-direction: row;
         align-items: top;
         gap: 6em;
+
+        @include media("<=tablet") {
+          flex-direction: column;
+          align-items: center;
+          gap: 1em;
+        }
+
+        @include media("<=phone") {
+          flex-direction: column;
+          align-items: center;
+          gap: 1em;
+        }
         //justify-content: space-between;
         .plan__hour {
           font-family: Roboto;
@@ -279,16 +557,34 @@ nav {
           color: #f4f4f4;
         }
         .plan__description {
+          @include media("<=tablet") {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          @include media("<=phone") {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
           .description__title {
             font-family: Roboto;
             font-weight: normal;
             font-size: 21px;
             text-align: left;
             color: #f4f4f4;
+
+            @include media("<=tablet") {
+              text-align: center;
+            }
+
+            @include media("<=phone") {
+              text-align: center;
+            }
           }
           .description__descript {
             width: 736px;
-            height: 44px;
             font-family: Roboto;
             font-weight: normal;
             font-size: 15px;
@@ -297,6 +593,16 @@ nav {
             color: #f4f4f4;
             opacity: 0.31;
             margin-top: 0.8em;
+
+            @include media("<=tablet") {
+              width: 80vw;
+              text-align: center;
+            }
+
+            @include media("<=phone") {
+              width: 80vw;
+              text-align: center;
+            }
           }
         }
       }
@@ -313,19 +619,39 @@ nav {
 
 .whitepaper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $bg-color;
-  .container {
-    padding-top: 6em;
-    width: 1080px;
-    margin: 0 auto;
 
+  .container {
+    @include media("<=tablet") {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include media("<=phone") {
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     h1 {
       font-family: Poppins;
       font-weight: bold;
       font-size: 57px;
       color: #abdf75;
       opacity: 0.31;
+
+      @include media("<=tablet") {
+        font-size: 3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.8em;
+      }
     }
     h2 {
       font-family: Poppins;
@@ -333,37 +659,123 @@ nav {
       font-size: 50px;
       text-align: left;
       color: #abdf75;
+
+      @include media("<=tablet") {
+        font-size: 2.3em;
+      }
+
+      @include media("<=phone") {
+        font-size: 2.3em;
+      }
     }
-    p {
+    .whitepaper__description {
       width: 544px;
-      height: 90px;
       font-family: Roboto;
       font-weight: normal;
       font-size: 18px;
       line-height: 27px;
       text-align: left;
       color: #f4f4f4;
-      margin: 1.2em 0;
+      margin: 1.5em 0;
+
+      @include media("<=tablet") {
+        font-size: 1em;
+        width: 90vw;
+        text-align: center;
+      }
+
+      @include media("<=phone") {
+        font-size: 1em;
+        width: 90vw;
+        text-align: center;
+      }
     }
-    .whitepaper__card {
-      width: 260px;
-      height: 260px;
-      border-radius: 10px;
-      background: #252422;
+    .whitepaper__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1.5em;
+      margin-bottom: 3em;
 
-      img {
+      @include media("<=tablet") {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.2em;
+      }
+
+      @include media("<=phone") {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2em;
+      }
+
+      .whitepaper__card {
+        width: 260px;
+        border-radius: 10px;
+        background: #252422;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 1em;
+
+        img {
           position: absolute;
-          margin-top: -1.5em;
-      }
+          margin-top: -1.3em;
+        }
 
-      h4 {
-          margin-top: 4em;
-      }
-      .btn__download {
-          margin-top: 4em;
-        p {
+        h4 {
+          padding-top: 9em;
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 15px;
+          color: #abdf75;
+        }
+        .btn__download {
+          border-radius: 7px;
+          background: #abdf75;
+          box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.16);
+          padding: 0.9em 1.2em;
+          margin: 1em 0;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          gap: 1em;
+
+          p {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 12px;
+            text-align: center;
+            color: #252422;
+          }
         }
       }
+    }
+  }
+}
+
+//footer
+footer {
+  background-color: $primary;
+  padding: 1.5em 0;
+  .content {
+    margin: 0 auto;
+    width: 80vw;
+
+    p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 14px;
+      color: black;
+    }
+
+    a{
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 14px;
+      color: black;
     }
   }
 }

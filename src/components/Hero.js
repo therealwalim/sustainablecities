@@ -42,16 +42,16 @@ export default function Hero() {
         </div>
         <ul>
           <li>
-            <a href="">À propos</a>
+            <a href="#about">À propos</a>
           </li>
           <li>
-            <a href="">Sponsors</a>
+            <a href="#sponsor">Sponsors</a>
           </li>
           <li>
-            <a href="">Agenda</a>
+            <a href="#agenda">Agenda</a>
           </li>
           <li>
-            <a href="">Contenu</a>
+            <a href="#lb">Contenu</a>
           </li>
         </ul>
       </nav>
