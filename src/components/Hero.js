@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import backgroundVideo from "../assets/video.mp4";
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import logo from "../assets/logo.svg";
+import Nav from "../components/Nav"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,26 +36,8 @@ export default function Hero() {
   });
   return (
     <>
-      <nav>
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
-        <ul>
-          <li>
-            <a href="#about">À propos</a>
-          </li>
-          <li>
-            <a href="#sponsor">Sponsors</a>
-          </li>
-          <li>
-            <a href="#agenda">Agenda</a>
-          </li>
-          <li>
-            <a href="#lb">Contenu</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hero">
+      <Nav />
+      <div class="hero" id="home">
         <div className="content">
           <h1>CONCEVONS ENSEMBLE DES VILLES INTELLIGENTES ET DURABLES</h1>
           <p>

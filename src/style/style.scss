@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 //layout
-:root{
+:root {
   scroll-behavior: smooth;
 }
 
@@ -32,8 +32,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   z-index: 100000000000;
-  margin: 1em;
+  padding: 0 1em;
   width: calc(100% - 2em);
+
+  height: 104px;
+  background: linear-gradient(rgba(0, 0, 0, 0.18) 0%,rgba(128, 128, 128, 0) 100%);
 
   @include media("<=tablet") {
     position: absolute;
@@ -45,13 +48,12 @@ nav {
 
   @include media("<=tablet") {
     width: 95vw;
-    margin: 1em 0;
     justify-content: center;
   }
 
   @include media("<=phone") {
+    padding: 0;
     width: 95vw;
-    margin: 1em 0;
     justify-content: center;
   }
 
@@ -71,6 +73,7 @@ nav {
     li {
       display: inline-block;
       margin-left: 1em;
+
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -78,6 +81,12 @@ nav {
         font-weight: 600;
         font-size: 0.8125rem;
         color: #f4f4f4;
+      }
+
+      &.active {
+        a{
+          color: #abdf75;
+        }
       }
     }
   }
@@ -146,6 +155,7 @@ nav {
       text-align: center;
       color: #f4f4f4;
       text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      line-height: 1.4em;
 
       @include media("<=tablet") {
         width: 30rem;
@@ -197,10 +207,11 @@ nav {
   }
 }
 
-.about {
+.apropos {
   width: 100%;
   height: 100vh;
   background-color: $bg-color;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -340,7 +351,7 @@ nav {
   }
 }
 
-.sponsor {
+.sponsors {
   width: 100%;
   min-height: 100vh;
   background-color: $bg-color;
@@ -445,7 +456,7 @@ nav {
   }
 }
 
-.agenda {
+.planning {
   width: 100%;
   min-height: 100vh;
   background-color: $bg-color;
@@ -771,7 +782,7 @@ footer {
       color: black;
     }
 
-    a{
+    a {
       font-family: Roboto;
       font-weight: 400;
       font-size: 14px;
