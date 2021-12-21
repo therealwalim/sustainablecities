@@ -16,11 +16,13 @@
   margin: 0 auto;
 
   @include media("<=tablet") {
+    padding-top: 2em;
     width: 80vw;
     margin: 0 auto;
   }
 
   @include media("<=phone") {
+    padding-top: 4em;
     width: 95vw;
     margin: 0 auto;
   }
@@ -187,6 +189,26 @@ nav {
     }
   }
 
+  #Ellipse_1{
+    transform: translate(677px, 659px);
+    animation: mouseturn 1.5s ease-in infinite;
+  }
+
+  @keyframes mouseturn {
+    0%{
+      transform: translate(677px, 659px);
+      opacity: 1;
+    }
+    50%{
+      transform: translate(677px, 670px);
+      opacity: .2;
+    }
+    100%{
+      transform: translate(677px, 659px);
+      opacity: 1;
+    }
+  }
+
   #video {
     //position: absolute;
     z-index: 1;
@@ -202,7 +224,7 @@ nav {
     }
 
     @include media("<=phone") {
-      transform: scale(3.2);
+      transform: scale(5);
     }
   }
 }
@@ -297,6 +319,7 @@ nav {
         flex-direction: row;
         gap: 1em;
         align-items: center;
+        cursor:pointer;
 
         @include media("<=tablet") {
           padding: 0.9em 0.9em;
@@ -703,13 +726,13 @@ nav {
     }
     .whitepaper__container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 1.5em;
-      margin-bottom: 3em;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1em;
+      padding-bottom: 3em;
 
       @include media("<=tablet") {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         gap: 1.2em;
       }
 
@@ -771,6 +794,7 @@ nav {
 footer {
   background-color: $primary;
   padding: 1.5em 0;
+
   .content {
     margin: 0 auto;
     width: 80vw;
@@ -780,6 +804,14 @@ footer {
       font-weight: 400;
       font-size: 14px;
       color: black;
+
+      @include media("<=tablet") {
+        text-align: center;
+      }
+    
+      @include media("<=phone") {
+        text-align: center;
+      }
     }
 
     a {

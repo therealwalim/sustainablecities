@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 
-export default function Nav() {
+export default function Nav(props) {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("nav ul li");
@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <nav>
       <div className="logo">
-        <img src={logo} alt="" />
+        <img ref={props.log} src={logo} alt="" />
       </div>
       <ul>
         <li className="about">

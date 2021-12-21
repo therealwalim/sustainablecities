@@ -1,17 +1,14 @@
 import React from "react";
 
-export default function AgendaCard({agn}) {
+export default function AgendaCard(props) {
   return (
     <>
       <div className="plan__component">
-        <p className="plan__hour">14:30 — 14:45</p>
+        <p className="plan__hour">{props.agn.hour}</p>
         <div className="plan__description">
-          <p className="description__title">{agn.title}</p>
+          <p className="description__title">{props.agn.title}</p>
           <p className="description__descript">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet
+            {props.agn.description}
           </p>
         </div>
       </div>

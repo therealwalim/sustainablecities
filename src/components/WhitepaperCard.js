@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function WhitepaperCard({imgsus1}) {
+export default function WhitepaperCard(props) {
   return (
     <div className="whitepaper__card">
-      <img loading="lazy" src={imgsus1} alt="" />
-      <h4>Title</h4>
+      <img src={require(`../assets/${props.wp.image}.svg`).default} alt="" />
+      <h4>{props.wp.title}</h4>
       <div className="btn__download">
         <svg
           xmlns="http://www.w3.org/2000/svg"
