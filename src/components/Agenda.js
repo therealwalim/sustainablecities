@@ -21,7 +21,7 @@ export default function Agenda() {
         opacity: 0,
         ease: Power3.easeIn,
       }, {
-        y: 25,
+        y: 20,
         opacity: .3,
         ease: Power3.easeIn,
       })
@@ -38,7 +38,7 @@ export default function Agenda() {
       .from('.line__active', {
         width: 0,
         opacity: 0,
-        ease: Power3.easeIn,
+        ease: Power3.easeOut,
       })
       .from('.plan__component', {
         y: 30,

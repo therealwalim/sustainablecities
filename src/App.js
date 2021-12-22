@@ -4,8 +4,7 @@ import Sponsor from "./components/Sponsor";
 import Agenda from "./components/Agenda";
 import Whitepaper from "./components/Whitepaper";
 import "./style/style.scss";
-import aboutimg from "./assets/aboutimg.svg";
-import imgsus1 from "./assets/imgsus1.svg";
+import aboutimg from "./assets/aboutimg.png";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
 
       <Agenda />
 
-      <Whitepaper imgsus1={imgsus1}/>
+      <Whitepaper/>
 
       <footer>
         <div className="content">

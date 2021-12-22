@@ -6,7 +6,7 @@ import sustainable from "../assets/sustainable/sustainabledata";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Whitepaper({imgsus1}) {
+export default function Whitepaper() {
 
   let tl = useRef(null);
   const num = useRef(null);
@@ -22,7 +22,7 @@ export default function Whitepaper({imgsus1}) {
         opacity: 0,
         ease: Power3.easeIn,
       }, {
-        y: 25,
+        y: 20,
         opacity: .3,
         ease: Power3.easeIn,
       })
@@ -67,7 +67,7 @@ export default function Whitepaper({imgsus1}) {
         <div className="whitepaper__container">
         {sustainable.map((sus) =>
             sus.whitepaper.map((wp, index) => (
-              <WhitepaperCard imgsus1={imgsus1} index={index} wp={wp} />
+              <WhitepaperCard index={index} wp={wp} />
             ))
           )}
         </div>

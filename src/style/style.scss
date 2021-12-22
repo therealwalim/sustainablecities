@@ -150,7 +150,7 @@ nav {
       }
     }
     p {
-      width: 39rem;
+      max-width: 39rem;
       height: 5.625rem;
       font-family: Roboto;
       font-weight: normal;
@@ -362,6 +362,7 @@ nav {
     }
 
     .image {
+      
       img {
         @include media("<=tablet") {
           display: none;

@@ -20,7 +20,7 @@ export default function Sponsor() {
         opacity: 0,
         ease: Power3.easeIn,
       }, {
-        y: 25,
+        y: 20,
         opacity: .3,
         ease: Power3.easeIn,
       })

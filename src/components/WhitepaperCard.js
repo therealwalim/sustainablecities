@@ -3,7 +3,7 @@ import React from "react";
 export default function WhitepaperCard(props) {
   return (
     <div className="whitepaper__card">
-      <img src={require(`../assets/${props.wp.image}.svg`).default} alt="" />
+      <img src={require(`../assets/${props.wp.image}.png`).default} alt="" />
       <h4>{props.wp.title}</h4>
       <div className="btn__download">
         <svg
