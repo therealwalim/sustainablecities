@@ -95,9 +95,7 @@ export default function Hero() {
             />
           </g>
         </svg>
-        <video autoPlay loop muted id="video">
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
+        <video autoPlay loop muted id="video" src={backgroundVideo} />
       </div>
     </>
   );
