@@ -10,7 +10,6 @@ export default function Sponsor() {
   const num = useRef(null);
   const title = useRef(null);
   const description = useRef(null);
-  const btn = useRef(null);
 
   // Render
   useEffect(() => {
