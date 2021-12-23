@@ -26,22 +26,26 @@ const sustainable = [
             {
                 id: 1,
                 title: "Les énergies renouvelables",
-                image: "imgsus1"
+                image: "imgsus1",
+                link: "livre2"
             },
             {
                 id: 2,
                 title: "Smart Building",
-                image: "imgsus2"
+                image: "imgsus2",
+                link: "livre2"
             },
             {
                 id: 3,
                 title: "Smart Home",
-                image: "imgsus3"
+                image: "imgsus3",
+                link: "livre4"
             },
             {
                 id: 4,
                 title: "Smart Vehicles",
-                image: "imgsus4"
+                image: "imgsus4",
+                link: "livre4"
             },
         ]
     },

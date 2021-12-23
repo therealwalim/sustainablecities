@@ -42,20 +42,14 @@ nav {
 
   @include media("<=tablet") {
     position: absolute;
-  }
-
-  @include media("<=phone") {
-    position: absolute;
-  }
-
-  @include media("<=tablet") {
-    width: 95vw;
+    width: 100vw;
     justify-content: center;
   }
 
   @include media("<=phone") {
+    position: absolute;
     padding: 0;
-    width: 95vw;
+    width: 100vw;
     justify-content: center;
   }
 
@@ -201,7 +195,7 @@ nav {
       opacity: 1;
     }
     50%{
-      transform: translate(677px, 670px);
+      transform: translate(677px, 663px);
       opacity: .2;
     }
     100%{
@@ -362,7 +356,7 @@ nav {
     }
 
     .image {
-      
+
       img {
         @include media("<=tablet") {
           display: none;
@@ -773,6 +767,8 @@ nav {
           padding: 0.9em 1.2em;
           margin: 1em 0;
 
+          cursor: pointer;
+
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -795,7 +791,7 @@ nav {
 //footer
 footer {
   background-color: $primary;
-  padding: 1.5em 0;
+  padding: 1.6em 0;
 
   .content {
     margin: 0 auto;
@@ -803,7 +799,7 @@ footer {
 
     p {
       font-family: Roboto;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 14px;
       color: black;
 
@@ -820,6 +816,7 @@ footer {
       font-family: Roboto;
       font-weight: 400;
       font-size: 14px;
+      font-weight: 600;
       color: black;
     }
   }

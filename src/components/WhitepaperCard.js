@@ -1,11 +1,15 @@
 import React from "react";
 
 export default function WhitepaperCard(props) {
+  const handleClick = () => {
+    window.open(`http://localhost:3000/pdf/${props.wp.link}.pdf`);
+  };
+
   return (
     <div className="whitepaper__card">
       <img src={require(`../assets/${props.wp.image}.png`).default} alt="" />
       <h4>{props.wp.title}</h4>
-      <div className="btn__download">
+      <div className="btn__download" onClick={handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16.161"
