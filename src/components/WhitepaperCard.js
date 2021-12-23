@@ -4,7 +4,7 @@ require('dotenv').config()
 
 export default function WhitepaperCard(props) {
   const handleClick = () => {
-    window.open(`${process.env.PUBLIC_URL}${props.wp.link}.pdf`);
+    window.open(`${process.env.PUBLIC_URL}/pdf/${props.wp.link}.pdf`);
   };
 
   return (
