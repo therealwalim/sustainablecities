@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import backgroundVideo from "../assets/video.mp4";
+import backgroundVideo from "../assets/video1.mp4";
 import gsap, { Power3 } from "gsap";
 import Nav from "../components/Nav";
 
