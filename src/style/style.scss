@@ -724,7 +724,8 @@ nav {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1em;
-      padding-bottom: 3em;
+      padding-top: 2em;
+      padding-bottom: 4em;
 
       @include media("<=tablet") {
         display: grid;
