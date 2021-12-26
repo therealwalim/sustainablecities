@@ -22,17 +22,14 @@ export default function Coming() {
       },
     }).then((res) => {
       if (res.ok) {
-        setError("");
         res.text().then((suc) => {
-          setInterval(() => {
-            setSuccess(suc);
-          }, 200);
-          setSuccess("");
+          setError("");
+          setSuccess(suc);
         });
       } else {
+        setSuccess("");
         res.text().then((text) => {
-          setSuccess("");
-          str1 = text.replaceAll('"', "").replaceAll("\\", "")
+          str1 = text.replaceAll('"', "").replaceAll("\\", "");
           str2 = str1.charAt(0).toUpperCase() + str1.slice(1);
           setError(str2);
         });
@@ -83,13 +80,7 @@ export default function Coming() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            {error ? (
-              <p className="error">
-                {error}
-              </p>
-            ) : (
-              ""
-            )}
+            {error ? <p className="error">{error}</p> : ""}
             {success ? (
               <p className="success">
                 {success.replaceAll('"', "").replaceAll("\\", "")}
