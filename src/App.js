@@ -3,6 +3,7 @@ import About from "./components/About";
 import Sponsor from "./components/Sponsor";
 import Agenda from "./components/Agenda";
 import Whitepaper from "./components/Whitepaper";
+import Coming from "./components/Coming";
 import "./style/style.scss";
 import aboutimg from "./assets/aboutimg.png";
 
@@ -18,6 +19,8 @@ function App() {
       <Agenda />
 
       <Whitepaper/>
+
+      <Coming />
 
       <footer>
         <div className="content">

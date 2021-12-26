@@ -10,15 +10,16 @@ export default function Nav(props) {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 60) {
+        //sectionTop - 60
+        if (window.scrollY >= sectionTop - 500) {
           current = section.getAttribute("id");
         }
       });
 
       navLi.forEach((li) => {
-        li.classList.remove("active")
+        li.classList.remove("active");
         if (li.classList.contains(current)) {
-          li.classList.add("active")
+          li.classList.add("active");
         }
       });
     };
@@ -41,6 +42,9 @@ export default function Nav(props) {
         </li>
         <li className="lb">
           <a href="#lb">Contenu</a>
+        </li>
+        <li className="register">
+          <a href="#register">S'inscrire</a>
         </li>
       </ul>
     </nav>

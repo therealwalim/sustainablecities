@@ -10,6 +10,13 @@
   scroll-behavior: smooth;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .container {
   padding-top: 6em;
   width: 80vw;
@@ -39,7 +46,10 @@ nav {
   width: calc(100% - 2em);
 
   height: 104px;
-  background: linear-gradient(rgba(0, 0, 0, 0.18) 0%,rgba(128, 128, 128, 0) 100%);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.18) 0%,
+    rgba(128, 128, 128, 0) 100%
+  );
 
   @include media("<=tablet") {
     position: absolute;
@@ -82,7 +92,7 @@ nav {
       }
 
       &.active {
-        a{
+        a {
           color: #abdf75;
         }
       }
@@ -186,21 +196,21 @@ nav {
     }
   }
 
-  #Ellipse_1{
+  #Ellipse_1 {
     transform: translate(677px, 659px);
     animation: mouseturn 1.5s ease-in infinite;
   }
 
   @keyframes mouseturn {
-    0%{
+    0% {
       transform: translate(677px, 659px);
       opacity: 1;
     }
-    50%{
+    50% {
       transform: translate(677px, 663px);
-      opacity: .2;
+      opacity: 0.2;
     }
-    100%{
+    100% {
       transform: translate(677px, 659px);
       opacity: 1;
     }
@@ -273,7 +283,7 @@ nav {
         font-family: Poppins;
         font-weight: bold;
         font-size: 50px;
-        text-align: left;
+        
         color: #abdf75;
 
         @include media("<=tablet") {
@@ -292,7 +302,7 @@ nav {
         font-weight: normal;
         font-size: 18px;
         line-height: 27px;
-        text-align: left;
+        
         color: #f4f4f4;
         overflow: hidden;
 
@@ -317,7 +327,7 @@ nav {
         flex-direction: row;
         gap: 1em;
         align-items: center;
-        cursor:pointer;
+        cursor: pointer;
 
         @include media("<=tablet") {
           padding: 0.9em 0.9em;
@@ -359,7 +369,6 @@ nav {
     }
 
     .image {
-
       img {
         @include media("<=tablet") {
           display: none;
@@ -414,7 +423,7 @@ nav {
       font-family: Poppins;
       font-weight: bold;
       font-size: 50px;
-      text-align: left;
+      
       color: #abdf75;
 
       @include media("<=tablet") {
@@ -431,7 +440,7 @@ nav {
       font-weight: normal;
       font-size: 18px;
       line-height: 27px;
-      text-align: left;
+      
       color: #f4f4f4;
       margin: 1.2em 0;
 
@@ -519,7 +528,7 @@ nav {
       font-family: Poppins;
       font-weight: bold;
       font-size: 50px;
-      text-align: left;
+    
       color: #abdf75;
 
       @include media("<=tablet") {
@@ -588,7 +597,7 @@ nav {
           font-family: Roboto;
           font-weight: normal;
           font-size: 21px;
-          text-align: left;
+          
           color: #f4f4f4;
         }
         .plan__description {
@@ -607,7 +616,7 @@ nav {
             font-family: Roboto;
             font-weight: normal;
             font-size: 21px;
-            text-align: left;
+            
             color: #f4f4f4;
 
             @include media("<=tablet") {
@@ -624,7 +633,7 @@ nav {
             font-weight: normal;
             font-size: 15px;
             line-height: 22px;
-            text-align: left;
+            
             color: #f4f4f4;
             opacity: 0.31;
             margin-top: 0.8em;
@@ -693,7 +702,7 @@ nav {
       font-family: Poppins;
       font-weight: bold;
       font-size: 50px;
-      text-align: left;
+      
       color: #abdf75;
 
       @include media("<=tablet") {
@@ -710,7 +719,7 @@ nav {
       font-weight: normal;
       font-size: 18px;
       line-height: 27px;
-      text-align: left;
+      
       color: #f4f4f4;
       margin: 1.5em 0;
 
@@ -795,6 +804,156 @@ nav {
   }
 }
 
+//register users for the event
+.coming {
+  width: 100%;
+  min-height: 50vh;
+  background-color: $bg-color;
+  .container {
+    padding-top: 3em;
+    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+
+    h1 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 1.7rem;
+      text-align: center;
+      color: #abdf75;
+      text-transform: uppercase;
+
+      @include media("<=tablet") {
+        font-size: 1.5rem;
+      }
+
+      @include media("<=phone") {
+        font-size: 1.3rem;
+      }
+    }
+
+    .coming__description {
+      width: 678px;
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #f4f4f4;
+      margin-top: 0.8em;
+      margin-bottom: 2em;
+      align-self: center;
+      line-height: 1.2em;
+
+      @include media("<=tablet") {
+        width: 30rem;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+      }
+
+      @include media("<=phone") {
+        width: 20rem;
+        line-height: 1.4rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    .wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: start;
+      
+      .input__register {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: center;
+        gap: 1em;
+
+        @include media("<=tablet") {
+          
+        }
+  
+        @include media("<=phone") {
+          flex-direction: column;
+        }
+
+        .input__group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-radius: 9px;
+          svg {
+            padding: 1.27em;
+            background: #f4f4f4;
+            border-end-start-radius: 7px;
+            border-top-left-radius: 7px;
+          }
+          input {
+            width: 333px;
+            padding: 1em;
+            border: 3px solid transparent;
+            border-end-end-radius: 7px;
+            border-top-right-radius: 7px;
+            background: #f4f4f4;
+  
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            @include media("<=tablet") {
+          
+            }
+      
+            @include media("<=phone") {
+              width: 60vw;
+              padding: 1.1em;
+              font-size: .9rem;
+            }
+
+            &::-moz-focus-inner {
+              display: none;
+            }
+            &::-moz-focus-outer {
+              display: none;
+            }
+            /*&:focus {
+              border: 3px solid #abdf75;
+            }*/
+  
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 1em;
+            color: $bg-color;
+          }
+        }
+  
+        .btn__submit {
+          width: 100px;
+          padding: 1.4em;
+          background: #abdf75;
+          border-radius: 7px;
+  
+          cursor: pointer;
+
+          @include media("<=phone") {
+            width: 75vw;
+          }
+  
+          p {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 1em;
+            color: #f4f4f4;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 //footer
 footer {
   background-color: $primary;
@@ -813,7 +972,7 @@ footer {
       @include media("<=tablet") {
         text-align: center;
       }
-    
+
       @include media("<=phone") {
         text-align: center;
       }
@@ -826,5 +985,32 @@ footer {
       font-weight: 600;
       color: black;
     }
+  }
+}
+
+
+.error {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: .8rem;
+  color: #e63946;
+  width: 10em;
+
+  @include media("<=phone") {
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+.success {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: .8rem;
+  color: #abdf75;
+  width: 10em;
+
+  @include media("<=phone") {
+    width: 100vw;
+    text-align: center;
   }
 }
