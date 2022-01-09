@@ -61,7 +61,7 @@ const sustainable = [
             },
             {
                 id: 4,
-                title: "Smart Home",
+                title: "Maison intelligente et durabilité",
                 image: "imgsus4",
                 link: "livre4"
             },
