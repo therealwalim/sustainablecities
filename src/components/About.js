@@ -54,7 +54,7 @@ export default function About({ aboutimg }) {
   });
 
   const handleClick = () => {
-    window.open("https://youtu.be/8GSEcOXV5UU");
+    window.open("https://youtu.be/MwnX7enMJCU");
   };
 
   return (
