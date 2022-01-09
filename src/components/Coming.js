@@ -42,10 +42,7 @@ export default function Coming() {
       <div className="container">
         <h1>M'inscrire à l'évènement</h1>
         <p className="coming__description">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+        Veuillez renseigner votre adresse e-mail pour participer à notre conférence et ne rater aucune nouvelle de celle-ci
         </p>
         <div className="wrapper">
           <div className="display"></div>

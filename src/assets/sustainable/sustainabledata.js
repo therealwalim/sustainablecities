@@ -5,45 +5,63 @@ const sustainable = [
         agenda: [
             {
                 id:1,
-                hour: "14:30 — 14:45",
-                title: "Accueil des invités",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet"
+                hour: "14:00 — 14:10",
+                title: "Kick-off",
+                description: "Accueil des participants et présentation de l'évènement, de ses conférenciers et des sujets abordés."
             },
             {
                 id:2,
-                hour: "14:30 — 14:45",
-                title: "Accueil des invités",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet"
+                hour: "14:10 — 14:30",
+                title: "Sujet n°1",
+                description: "Le sujet concernant l'« Énergie propre & durable » sera présenté par ***."
             },
             {
                 id:3,
-                hour: "14:30 — 14:45",
-                title: "Accueil des invités",
-                description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet"
+                hour: "14:30 — 14:50",
+                title: "Sujet n°2",
+                description: "Le sujet concernant « La place du développement routier dans une Smart City » sera présenté par ***."
+            },
+            {
+                id:4,
+                hour: "14:50 — 15:10",
+                title: "Sujet n°3",
+                description: "Le sujet concernant les « Smart & Green Buildings » sera présenté par Berkane Adel et Benmerar Dounia."
+            },
+            {
+                id:5,
+                hour: "15:10 — 15:30",
+                title: "Sujet n°4",
+                description: "Le sujet concernant le « Smart Home » sera présenté par ***."
+            },
+            {
+                id:6,
+                hour: "15:30 — 16:00",
+                title: "Pause café",
+                description: "Fin de la conférence"
             },
         ],
         whitepaper: [
             {
                 id: 1,
-                title: "Les énergies renouvelables",
+                title: "Énergie propre & durable",
                 image: "imgsus1",
                 link: "livre1"
             },
             {
                 id: 2,
-                title: "Smart Building",
+                title: "La place du développement routier dans une Smart City",
                 image: "imgsus2",
                 link: "livre2"
             },
             {
                 id: 3,
-                title: "Smart Home",
+                title: "Smart & Green Buildings",
                 image: "imgsus3",
-                link: "livre4"
+                link: "livre3"
             },
             {
                 id: 4,
-                title: "Smart Vehicles",
+                title: "Smart Home",
                 image: "imgsus4",
                 link: "livre4"
             },

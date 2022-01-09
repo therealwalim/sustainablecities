@@ -58,9 +58,7 @@ export default function Whitepaper() {
         <h1 ref={num}>04</h1>
         <h2 ref={title}>LIVRES BLANCS</h2>
         <p ref={description} className="whitepaper__description">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo
+          Afin d'avoir un aperçu sur ce qui va être présenté le jour de la conférence, nous avons pris soin de vous partager nos livres blancs.
         </p>
 
         <div className="whitepaper__container">

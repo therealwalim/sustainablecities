@@ -296,7 +296,6 @@ nav {
       }
       .about__description {
         width: 628px;
-        height: 220px;
         margin: 1.2em 0;
         font-family: Roboto;
         font-weight: normal;
@@ -774,6 +773,7 @@ nav {
           font-family: Poppins;
           font-weight: 600;
           font-size: 15px;
+          text-align: center;
           color: #abdf75;
         }
         .btn__download {
@@ -837,7 +837,7 @@ nav {
       width: 678px;
       font-family: Roboto;
       font-weight: normal;
-      font-size: 1.3rem;
+      font-size: 1.125rem;
       text-align: center;
       color: #f4f4f4;
       margin-top: 0.8em;
@@ -885,7 +885,7 @@ nav {
           align-items: center;
           border-radius: 9px;
           svg {
-            padding: 1.27em;
+            padding: 1.281em;
             background: #f4f4f4;
             border-end-start-radius: 7px;
             border-top-left-radius: 7px;

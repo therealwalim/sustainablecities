@@ -31,18 +31,26 @@ export default function Hero() {
         opacity: 0,
         ease: Power3.easeOut,
       })
-      .from("nav ul li", {
-        y: 20,
-        opacity: 0,
-        stagger: .2,
-        ease: Power3.easeOut,
-      }, 1.3)
-      .from(log.current, {
-        y: 20,
-        opacity: 0,
-        stagger: .2,
-        ease: Power3.easeOut,
-      }, 1.3)
+      .from(
+        "nav ul li",
+        {
+          y: 20,
+          opacity: 0,
+          stagger: 0.2,
+          ease: Power3.easeOut,
+        },
+        1.3
+      )
+      .from(
+        log.current,
+        {
+          y: 20,
+          opacity: 0,
+          stagger: 0.2,
+          ease: Power3.easeOut,
+        },
+        1.3
+      );
   });
   return (
     <>
@@ -53,12 +61,11 @@ export default function Hero() {
             CONCEVONS ENSEMBLE DES VILLES INTELLIGENTES ET DURABLES
           </h1>
           <p ref={para}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo
+          Réfléchissons ensemble à ces sujets, changeons de paradigme et parvenons à la réalisation des objectifs de Développement Durable de l'Agenda 2030, pour les populations, pour la planète, pour la prospérité, pour la paix.
           </p>
         </div>
-        <svg ref={curs}
+        <svg
+          ref={curs}
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="44"

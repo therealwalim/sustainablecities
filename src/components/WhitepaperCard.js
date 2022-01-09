@@ -44,7 +44,7 @@ export default function WhitepaperCard(props) {
           </g>
         </svg>
 
-        <p>Télécharger le contenu</p>
+        <p>Visualiser le contenu</p>
       </div>
     </div>
   );

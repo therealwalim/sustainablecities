@@ -62,7 +62,7 @@ export default function Agenda() {
       <div className="container">
         <h1 ref={num}>03</h1>
         <h2 ref={title}>PLANNING</h2>
-        <h3 ref={description}>JEUDI 13 JANVIER 2022</h3>
+        <h3 ref={description}>LUNDI 17 JANVIER 2022</h3>
         <div className="line__active"></div>
         <div className="plan">
           {sustainable.map((sus) =>

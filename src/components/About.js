@@ -15,14 +15,18 @@ export default function About({ aboutimg }) {
   useEffect(() => {
     tl.current = gsap
       .timeline()
-      .fromTo(num.current,{
-        opacity: 0,
-        ease: Power3.easeIn,
-      }, {
-        y: 20,
-        opacity: .3,
-        ease: Power3.easeIn,
-      })
+      .fromTo(
+        num.current,
+        {
+          opacity: 0,
+          ease: Power3.easeIn,
+        },
+        {
+          y: 20,
+          opacity: 0.3,
+          ease: Power3.easeIn,
+        }
+      )
       .from(title.current, {
         y: 30,
         opacity: 0,
@@ -60,16 +64,10 @@ export default function About({ aboutimg }) {
           <h1 ref={num}>01</h1>
           <h2 ref={title}>La conference</h2>
           <p ref={description} className="about__description">
-            Lore ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam
+            La conférence Ville Durable aura lieu le Lundi 17 Janvier 2022 de
+            14h à 15h30 dans la salle 001 (Rez-de chaussée du CESI Exia) et sera
+            animée par la promotion A5 (2021-2022). Pour un petit aperçu,
+            visionnez la vidéo de pré-lancement de l'évènement.
           </p>
           <div ref={btn} className="btn__video" onClick={handleClick}>
             <svg
