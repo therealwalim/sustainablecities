@@ -13,13 +13,13 @@ const sustainable = [
                 id:2,
                 hour: "14:10 — 14:30",
                 title: "Sujet n°1",
-                description: "Le sujet concernant l'« Énergie propre & durable » sera présenté par ***."
+                description: "Le sujet concernant l'« Énergie propre & durable » sera présenté par Ait Rabah Zineddine et Messaour Ghada."
             },
             {
                 id:3,
                 hour: "14:30 — 14:50",
                 title: "Sujet n°2",
-                description: "Le sujet concernant « La place du développement routier dans une Smart City » sera présenté par ***."
+                description: "Le sujet concernant « La place du développement routier dans une Smart City » sera présenté par Boukhecheba Moncef et Mesbah Zakaria ."
             },
             {
                 id:4,
@@ -31,7 +31,7 @@ const sustainable = [
                 id:5,
                 hour: "15:10 — 15:30",
                 title: "Sujet n°4",
-                description: "Le sujet concernant le « Smart Home » sera présenté par ***."
+                description: "Le sujet concernant le « Smart Home » sera présenté par Sereir Ikram."
             },
             {
                 id:6,

@@ -55,7 +55,7 @@ export default function Sponsor() {
         <h1 ref={num}>02</h1>
         <h2 ref={title}>NOS SPONSORS</h2>
         <p ref={description}>
-          Un sponsor était primordial afin qu'un tel projet puisse aboutir, il pourra nous soutenir financièrement afin de garantir la tenue de l'évènement.
+        Nous remercions le CESI Exia d’avoir sponsorisé l'évènement, ils pourrons nous soutenir financièrement afin de garantir la faisabilité de l'évènement.
         </p>
         <div className="sponsor__container">
           <div className="sponsor__card">

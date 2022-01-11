@@ -58,7 +58,7 @@ export default function Whitepaper() {
         <h1 ref={num}>04</h1>
         <h2 ref={title}>LIVRES BLANCS</h2>
         <p ref={description} className="whitepaper__description">
-          Afin d'avoir un aperçu sur ce qui va être présenté le jour de la conférence, nous avons pris soin de vous partager nos livres blancs.
+          Afin d'avoir un aperçu sur ce qui va être présenté le jour de la conférence, nous avons pris soin de vous partager nos livres blancs:
         </p>
 
         <div className="whitepaper__container">

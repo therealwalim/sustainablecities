@@ -62,11 +62,11 @@ export default function About({ aboutimg }) {
       <div className="container">
         <div className="about__text">
           <h1 ref={num}>01</h1>
-          <h2 ref={title}>La conference</h2>
+          <h2 ref={title}>La conférence</h2>
           <p ref={description} className="about__description">
             La conférence Ville Durable aura lieu le Lundi 17 Janvier 2022 de
             14h à 15h30 dans la salle 001 (Rez-de chaussée du CESI Exia) et sera
-            animée par la promotion A5 (2021-2022). Pour un petit aperçu,
+            animée par la promotion A5 (2021-2022). <br />Pour un petit aperçu,
             visionnez la vidéo de pré-lancement de l'évènement.
           </p>
           <div ref={btn} className="btn__video" onClick={handleClick}>
@@ -97,7 +97,7 @@ export default function About({ aboutimg }) {
               </g>
             </svg>
 
-            <p className="btn__label">Watch video</p>
+            <p className="btn__label">Regarder la vidéo</p>
           </div>
         </div>
         <div className="image">
