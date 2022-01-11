@@ -45,7 +45,7 @@ export default function Sponsor() {
       animation: tl.current,
       start: "top center+=150px",
       end: "top center+=50px",
-      scrub: 2,
+      scrub: 1,
       toggleActions: "play complete reverse",
     });
   });
