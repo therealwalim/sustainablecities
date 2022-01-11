@@ -67,7 +67,7 @@ export default function About({ aboutimg }) {
             La conférence Ville Durable aura lieu le Lundi 17 Janvier 2022 de
             14h à 15h30 dans la salle 001 (Rez-de chaussée du CESI Exia) et sera
             animée par la promotion A5 (2021-2022). <br />Pour un petit aperçu,
-            visionnez la vidéo de pré-lancement de l'évènement.
+            nous vous invitons à visionner la vidéo de pré-lancement de l'évènement :
           </p>
           <div ref={btn} className="btn__video" onClick={handleClick}>
             <svg
