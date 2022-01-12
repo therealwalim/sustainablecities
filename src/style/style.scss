@@ -189,10 +189,12 @@ nav {
 
     @include media("<=tablet") {
       transform: translate(-50%, -50%) scale(0.9);
+      bottom: 3%;
     }
 
     @include media("<=phone") {
       transform: translate(-50%, -50%) scale(0.8);
+      bottom: 2%;
     }
   }
 
