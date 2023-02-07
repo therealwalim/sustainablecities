@@ -5,7 +5,7 @@
 # Sustainable Cities 2022
 
 ## Live preview :
-:point_right: https://www.sustainablecities.live/
+:point_right: https://sustainablecities.vercel.app/
 
 ## Objectives pursued : 
 * Designing a landing page for the event.
